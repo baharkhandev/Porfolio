@@ -10,7 +10,7 @@
     social: {
       email: "baharkhan.dev@gmail.com",
       linkedin: "https://www.linkedin.com/in/baharkhan/",
-      github: "https://github.com/baharkhanbd",
+      github: "https://github.com/baharkhandev",
       x: "https://x.com/baharkhanbd",
     },
   };
