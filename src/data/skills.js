@@ -1,103 +1,61 @@
-// export const skills = [
-//   {
-//     title: 'Programming & Frameworks',
-//     items: [
-//       { name: 'Dart', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg' },
-//       { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg' },
-//     ],
-//   },
-//   {
-//     title: 'Mobile App Development',
-//     items: [
-//       { name: 'Play Store App Deployment', icon: 'https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg' },
-//       { name: 'Payment Gateway Integration', icon: 'https://cdn-icons-png.flaticon.com/512/2331/2331948.png' }, // colorful money icon
-//       { name: 'Responsive Design', icon: 'https://cdn-icons-png.flaticon.com/512/1005/1005148.png' },
-//     ],
-//   },
-//   {
-//     title: 'Programming Concepts & Architecture',
-//     items: [
-//       { name: 'OOPS Concept', icon: 'https://cdn-icons-png.flaticon.com/512/3022/3022561.png' },
-//       { name: 'MVC', icon: 'https://cdn-icons-png.flaticon.com/512/2965/2965567.png' },
-//       { name: 'Rest API', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-//     ],
-//   },
-//   {
-//     title: 'State Management & Navigation',
-//     items: [
-//       { name: 'GetX', icon: 'https://cdn-icons-png.flaticon.com/512/3193/3193187.png' },
-//       { name: 'Provider', icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968885.png' }, // colorful provider icon
-//       { name: 'Go Router', icon: 'https://cdn-icons-png.flaticon.com/512/684/684908.png' },
-//     ],
-//   },
-//   {
-//     title: 'Backend & Services',
-//     items: [
-//       { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
-//       { name: 'Push Notification', icon: 'https://cdn-icons-png.flaticon.com/512/786/786205.png' },
-//     ],
-//   },
-//   {
-//     title: 'Developer Tools',
-//     items: [
-//       { name: 'Git & GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-//       { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
-//       { name: 'Android Studio', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg' },
-//     ],
-//   },
-// ];
+import { SiDart, SiFlutter, SiFirebase, SiSocketdotio, SiAppstore, SiGoogleplay, SiStripe, SiGithub } from "react-icons/si";
+import { FaCubes, FaLayerGroup, FaCube, FaProjectDiagram, FaRoute, FaCreditCard } from "react-icons/fa";
+import { MdApi, MdMessage, MdNotificationsActive, MdSpeed, MdDevices, MdSecurity } from "react-icons/md";
+import { IoWater } from "react-icons/io5";
+import { BiLayer, BiNetworkChart } from "react-icons/bi";
+
 export const skills = [
   {
     title: 'Programming & Frameworks',
     items: [
-      { name: 'Dart', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg' },
-      { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg' },
-   
+      { name: 'Dart', icon: SiDart, color: '#0175C2' },
+      { name: 'Flutter', icon: SiFlutter, color: '#02569B' },
+      { name: 'OOP Concepts', icon: FaCubes, color: '#00b894' },
     ],
   },
   {
-    title: 'Mobile App Development',
+    title: 'Architecture & Patterns',
     items: [
-      { name: 'Play Store App Deployment', icon: 'https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg' },
-      { name: 'App Store Deployment', icon: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg' },
-      { name: 'iOS', icon: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg' },
-      { name: 'Payment Gateway Integration', icon: 'https://cdn-icons-png.flaticon.com/512/2331/2331948.png' },
-      { name: 'Stripe Payment Integration', icon: 'https://cdn.iconscout.com/icon/free/png-256/stripe-4-461446.png' },
-      { name: 'Responsive Design', icon: 'https://cdn-icons-png.flaticon.com/512/1005/1005148.png' },
+      { name: 'MVC', icon: BiLayer, color: '#0984e3' },
+      { name: 'MVVM', icon: BiNetworkChart, color: '#00cec9' },
+      { name: 'Clean Architecture', icon: FaLayerGroup, color: '#6c5ce7' },
     ],
   },
   {
-    title: 'Programming Concepts & Architecture',
+    title: 'State Management & Routing',
     items: [
-      { name: 'OOPS Concept', icon: 'https://cdn-icons-png.flaticon.com/512/3022/3022561.png' },
-      { name: 'MVC', icon: 'https://cdn-icons-png.flaticon.com/512/2965/2965567.png' },
-      { name: 'Rest API', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-      { name: 'Clean Architecture', icon: 'https://cdn-icons-png.flaticon.com/512/189/189678.png' },
-      { name: 'Token Management', icon: 'https://cdn-icons-png.flaticon.com/512/2910/2910760.png' },
+      { name: 'BLoC', icon: FaCube, color: '#d63031' },
+      { name: 'GetX', icon: MdSpeed, color: '#e17055' },
+      { name: 'Provider', icon: FaProjectDiagram, color: '#00cec9' },
+      { name: 'Riverpod', icon: IoWater, color: '#0984e3' },
+      { name: 'GoRouter', icon: FaRoute, color: '#fdcb6e' },
     ],
   },
   {
-    title: 'State Management & Navigation',
+    title: 'Backend & Network',
     items: [
-      { name: 'GetX', icon: 'https://cdn-icons-png.flaticon.com/512/3193/3193187.png' },
-      { name: 'Provider', icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968885.png' },
-      { name: 'Go Router', icon: 'https://cdn-icons-png.flaticon.com/512/684/684908.png' },
-      { name: 'Riverpod', icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968885.png' },
+      { name: 'REST API', icon: MdApi, color: '#00b894' },
+      { name: 'Firebase', icon: SiFirebase, color: '#FFCA28' },
+      { name: 'Token Management', icon: MdSecurity, color: '#d63031' },
+      { name: 'WebSocket / socket.io', icon: SiSocketdotio, color: '' },
+      { name: 'Real-time Messaging', icon: MdMessage, color: '#0984e3' },
     ],
   },
   {
-    title: 'Backend & Services',
+    title: 'Deployment & Integrations',
     items: [
-      { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
-      { name: 'Push Notification', icon: 'https://cdn-icons-png.flaticon.com/512/786/786205.png' },
+      { name: 'App Store Deployment', icon: SiAppstore, color: '#0f8ce6' },
+      { name: 'Play Store Deployment', icon: SiGoogleplay, color: '#41cc00' },
+      { name: 'Stripe Payment', icon: SiStripe, color: '#635bff' },
+      { name: 'SSLCOMMERZ Integration', icon: FaCreditCard, color: '' },
+      { name: 'Push Notifications', icon: MdNotificationsActive, color: '#fdcb6e' },
     ],
   },
   {
-    title: 'Developer Tools',
+    title: 'Tools & Design',
     items: [
-      { name: 'Git & GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-      { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
-      { name: 'Android Studio', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg' },
+      { name: 'Git & GitHub', icon: SiGithub, color: '' },
+      { name: 'Responsive Design', icon: MdDevices, color: '#00cec9' },
     ],
   },
 ];

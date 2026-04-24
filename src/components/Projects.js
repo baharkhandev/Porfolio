@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { ProjectLinks } from './ui/ProjectLinks';
 import { projects } from '../data/projects';
 import { motion } from 'framer-motion';
 import * as Dialog from '@radix-ui/react-dialog';
@@ -138,32 +138,17 @@ const Projects = () => {
                             </motion.li>
                           ))}
                         </ul>
-                        <div className="mt-6 flex gap-3">
-                          {proj.links.code && (
-                            <motion.a 
-                              href={proj.links.code} 
-                              className="inline-flex items-center gap-2 rounded-md border border-border/50 px-4 py-2 text-sm bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300" 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              whileHover={{ scale: 1.05 }}
-                              whileTap={{ scale: 0.95 }}
-                            >
-                              <FaGithub /> View Code
-                            </motion.a>
-                          )}
-                          {proj.links.demo && (
-                            <motion.a 
-                              href={proj.links.demo} 
-                              className="inline-flex items-center gap-2 rounded-md border border-border/50 px-4 py-2 text-sm bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300" 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              whileHover={{ scale: 1.05 }}
-                              whileTap={{ scale: 0.95 }}
-                            >
-                              <FaExternalLinkAlt /> Live Demo
-                            </motion.a>
-                          )}
-                        </div>
+                        <ProjectLinks 
+                          links={proj.links} 
+                          size="md" 
+                          className={
+                            proj.links.github === 'https://play.google.com/store/apps/details?id=com.boyia.boyiaapp&hl=en' &&
+                            proj.links.android === 'https://play.google.com/store/apps/details?id=com.boyia.boyiaapp&hl=en' &&
+                            proj.links.ios === 'https://play.google.com/store/apps/details?id=com.boyia.boyiaapp&hl=en'
+                              ? 'pt-2'
+                              : ''
+                          }
+                        />
                         <Dialog.Close asChild>
                           <motion.button 
                             className="absolute right-4 top-4 inline-flex h-8 w-8 items-center justify-center rounded-md border border-border/50 hover:bg-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-all duration-300"
@@ -211,32 +196,17 @@ const Projects = () => {
                   </div>
                 )}
                 
-                <div className="flex gap-3 mt-4">
-                  {proj.links.code && (
-                    <motion.a 
-                      href={proj.links.code} 
-                      className="inline-flex items-center gap-2 rounded-md border border-border/50 px-3 py-2 text-sm bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <FaGithub /> View Code
-                    </motion.a>
-                  )}
-                  {proj.links.demo && (
-                    <motion.a 
-                      href={proj.links.demo} 
-                      className="inline-flex items-center gap-2 rounded-md border border-border/50 px-3 py-2 text-sm bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <FaExternalLinkAlt /> Live Demo
-                    </motion.a>
-                  )}
-                </div>
+                <ProjectLinks 
+                  links={proj.links} 
+                  size="sm" 
+                  className={
+                    proj.links.github === 'https://play.google.com/store/apps/details?id=com.boyia.boyiaapp&hl=en' &&
+                    proj.links.android === 'https://play.google.com/store/apps/details?id=com.boyia.boyiaapp&hl=en' &&
+                    proj.links.ios === 'https://play.google.com/store/apps/details?id=com.boyia.boyiaapp&hl=en'
+                      ? 'pt-2'
+                      : ''
+                  }
+                />
               </div>
             </motion.div>
           ))}
