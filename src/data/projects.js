@@ -194,7 +194,7 @@ export const projects = [
     links: {
       github: null,
       android: "https://drive.google.com/drive/folders/1lnRt_GAJEKkEA3qSk9KwwuEVJjWgauea",
-      ios: null,
+      ios: "https://apps.apple.com/us/app/coyoote/id6765964373",
     },
     tags: [
       'Dart',
@@ -203,6 +203,7 @@ export const projects = [
       'Real-time Messaging',
       'AI Integration',
       'Responsive Design',
+      'App Store Deployment',
     ],
   },
   {
